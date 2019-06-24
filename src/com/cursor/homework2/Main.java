@@ -11,7 +11,7 @@ public class Main {
         robot.hasStrongArmor();
         robot.shout();
         char planet = Aliens.pickAPlanet();
-        iRobot adapted = Aliens.adaptForAliens(robot,planet);
+        iRobot adapted = Aliens.adaptForAliens(robot, planet);
         if (adapted instanceof SeaReadyRobot)
             System.out.println("now robot is ready for sea");
         if (adapted instanceof WindReadyRobot)
@@ -22,5 +22,4 @@ public class Main {
         System.out.println("Congratulations, you didn't get killed by those robots");
 
 
-
-    }
+    }}

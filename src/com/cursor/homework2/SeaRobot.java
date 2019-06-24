@@ -1,16 +1,17 @@
 package com.cursor.homework2;
 
-public class SeaRobot implements iRobot, SeaReadyRobot{
+public class SeaRobot implements iRobot, SeaReadyRobot {
 
     private iRobot inner;
-    public SeaRobot(iRobot robot){
-        this.inner= robot;
+
+    public SeaRobot(iRobot robot) {
+        this.inner = robot;
 
     }
 
     @Override
     public void shoot() {
-         inner.shoot();
+        inner.shoot();
     }
 
     @Override

@@ -1,10 +1,11 @@
 package com.cursor.homework2;
 
-public class SunRobot implements iRobot, SeaReadyRobot{
+public class SunRobot implements iRobot, SeaReadyRobot {
 
     private iRobot inner;
-    public SunRobot(iRobot robot){
-        this.inner= robot;
+
+    public SunRobot(iRobot robot) {
+        this.inner = robot;
 
     }
 
