@@ -1,5 +1,10 @@
 package com.cursor.homework2;
 
+import com.cursor.homework2.interfaces.iRobot;
+import com.cursor.homework2.robots.SeaRobot;
+import com.cursor.homework2.robots.SunRobot;
+import com.cursor.homework2.robots.WindRobot;
+
 import java.util.Random;
 
 public class Aliens {

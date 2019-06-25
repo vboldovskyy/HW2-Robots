@@ -1,4 +1,4 @@
-package com.cursor.homework2;
+package com.cursor.homework2.robots;
 
 public class ImprovedRobot extends Robot {
 

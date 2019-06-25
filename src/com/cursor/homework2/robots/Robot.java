@@ -1,4 +1,6 @@
-package com.cursor.homework2;
+package com.cursor.homework2.robots;
+
+import com.cursor.homework2.interfaces.iRobot;
 
 public class Robot implements iRobot {
     protected String name;
@@ -24,18 +26,18 @@ public class Robot implements iRobot {
 
     public final void shoot() {
         proceed();
-        System.out.println("Piu! Piu!");
+        System.out.println(name + " shoots: Piu! Piu!");
     }
 
     public final void shout() {
         proceed();
-        System.out.println("Путін ХYЙЛО!");
+        System.out.println(name + " shouts: Путін ХYЙЛО!");
     }
 
 
     public final void move() {
         proceed();
-        System.out.println("Едем в соседнее село, на дискотеку...");
+        System.out.println(name+ " moves, singing: Едем в соседнее село, на дискотеку...");
     }
 
     public final boolean hasStrongArmor() {

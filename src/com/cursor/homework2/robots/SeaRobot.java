@@ -1,11 +1,13 @@
+package com.cursor.homework2.robots;
 
-package com.cursor.homework2;
+import com.cursor.homework2.interfaces.SeaReadyRobot;
+import com.cursor.homework2.interfaces.iRobot;
 
-public class WindRobot implements iRobot, WindReadyRobot {
+public class SeaRobot implements iRobot, SeaReadyRobot {
 
     private iRobot inner;
 
-    public WindRobot(iRobot robot) {
+    public SeaRobot(iRobot robot) {
         this.inner = robot;
 
     }
@@ -35,5 +37,4 @@ public class WindRobot implements iRobot, WindReadyRobot {
         return inner.hasStrongArmor();
     }
 }
-
 

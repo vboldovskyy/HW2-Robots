@@ -1,4 +1,4 @@
-package com.cursor.homework2;
+package com.cursor.homework2.interfaces;
 
 public interface iRobot {
 

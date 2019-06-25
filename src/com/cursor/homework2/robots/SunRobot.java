@@ -1,4 +1,7 @@
-package com.cursor.homework2;
+package com.cursor.homework2.robots;
+
+import com.cursor.homework2.interfaces.SeaReadyRobot;
+import com.cursor.homework2.interfaces.iRobot;
 
 public class SunRobot implements iRobot, SeaReadyRobot {
 

@@ -1,5 +1,10 @@
 package com.cursor.homework2;
 
+import com.cursor.homework2.interfaces.iRobot;
+import com.cursor.homework2.robots.EnhancedRobot;
+import com.cursor.homework2.robots.ImprovedRobot;
+import com.cursor.homework2.robots.Robot;
+
 import java.util.Random;
 
 public class RobotPicker {
@@ -7,8 +12,8 @@ public class RobotPicker {
         int rand = new Random().nextInt(12) + 1;
 
         if (rand > 8) return new EnhancedRobot();
-        if (rand > 3) return new ImprovedRobot();
-        return new Robot();
+        else if (rand > 3) return new ImprovedRobot();
+        else return new Robot();
 
     }
 }
