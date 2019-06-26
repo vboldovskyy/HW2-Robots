@@ -4,12 +4,14 @@ import com.cursor.homework2.interfaces.iRobot;
 
 public class Robot implements iRobot {
     protected String name;
+    public static final int ABNORMAL_SYSTEM_EXIT_CODE=-1;
     private double failureRate;
-    ;
+
+
 
     public Robot() {
         failureRate = 0.1;
-        name = "NonameRobot";
+        name = "NoNameRobot";
     }
 
     public Robot(String name) {
@@ -22,7 +24,6 @@ public class Robot implements iRobot {
         if (failureRate > this.failureRate)
             this.failureRate = failureRate;
     }
-
 
     public final void shoot() {
         proceed();
@@ -62,9 +63,9 @@ public class Robot implements iRobot {
 
     private void systemFailureWithExtermination() {
         System.out.println("ПРОПАЛО ВСЬО!");
-        System.out.println("Robot " + name + " has killed all the people on Earth!");
+        System.out.println("Robot " + name + " has encoutered a critical system error and has killed all the people on Earth!");
         System.out.println("System halted.");
-        System.exit(-1);
+        System.exit(ABNORMAL_SYSTEM_EXIT_CODE);
 
     }
 
