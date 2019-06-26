@@ -1,5 +1,6 @@
 package com.cursor.homework2;
 
+import com.cursor.homework2.interfaces.ProtectedRobot;
 import com.cursor.homework2.interfaces.iRobot;
 import com.cursor.homework2.robots.SeaRobot;
 import com.cursor.homework2.robots.SunRobot;
@@ -21,8 +22,8 @@ public class Aliens {
     }
 
 
-    public static iRobot adaptForAliens(iRobot robot, char planet) {
-        switch (planet) {
+    public static ProtectedRobot adaptForAliens(iRobot robot, char planetChoice) {
+        switch (planetChoice) {
             case 'A':
                 return new SeaRobot(robot);
             case 'B':
