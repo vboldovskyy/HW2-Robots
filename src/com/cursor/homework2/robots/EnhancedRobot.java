@@ -1,7 +1,7 @@
 package com.cursor.homework2.robots;
 
 public class EnhancedRobot extends Robot {
-    public static final double FAILURE_RATE = 0.7;
+    private static final double FAILURE_RATE = 0.35;
 
     public EnhancedRobot() {
         super("NonameEnhancedRobot", FAILURE_RATE);

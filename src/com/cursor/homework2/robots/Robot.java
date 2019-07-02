@@ -4,13 +4,14 @@ import com.cursor.homework2.interfaces.iRobot;
 
 public class Robot implements iRobot {
     protected String name;
-    public static final int ABNORMAL_SYSTEM_EXIT_CODE=-1;
+    private static final int ABNORMAL_SYSTEM_EXIT_CODE=-1;
     private double failureRate;
+    private static final double BASE_FAILURE_RATE = 0.1;
 
 
 
     public Robot() {
-        failureRate = 0.1;
+        failureRate = BASE_FAILURE_RATE;
         name = "NoNameRobot";
     }
 

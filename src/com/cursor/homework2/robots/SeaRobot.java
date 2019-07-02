@@ -9,7 +9,6 @@ public class SeaRobot implements iRobot, SeaReadyRobot {
 
     public SeaRobot(iRobot robot) {
         this.inner = robot;
-
     }
 
     @Override

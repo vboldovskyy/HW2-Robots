@@ -10,7 +10,6 @@ public class WindRobot implements iRobot, WindReadyRobot {
 
     public WindRobot(iRobot robot) {
         this.inner = robot;
-
     }
 
     @Override

@@ -2,13 +2,13 @@ package com.cursor.homework2.interfaces;
 
 public interface iRobot {
 
-    public void shoot();
+    void shoot();
 
-    public void shout();
+    void shout();
 
-    public void move();
+    void move();
 
-    public void reprogram();
+    void reprogram();
 
-    public boolean hasStrongArmor();
+    boolean hasStrongArmor();
 }

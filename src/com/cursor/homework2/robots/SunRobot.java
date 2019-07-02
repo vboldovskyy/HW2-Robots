@@ -1,15 +1,14 @@
 package com.cursor.homework2.robots;
 
-import com.cursor.homework2.interfaces.SeaReadyRobot;
+import com.cursor.homework2.interfaces.SunReadyRobot;
 import com.cursor.homework2.interfaces.iRobot;
 
-public class SunRobot implements iRobot, SeaReadyRobot {
+public class SunRobot implements iRobot, SunReadyRobot {
 
     private iRobot inner;
 
     public SunRobot(iRobot robot) {
         this.inner = robot;
-
     }
 
     @Override
