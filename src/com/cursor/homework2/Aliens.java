@@ -8,25 +8,32 @@ import com.cursor.homework2.robots.WindRobot;
 
 import java.util.Random;
 
-public class Aliens {
+class Aliens {
 
-    public static char pickAPlanet() {
-        switch (new Random().nextInt(3)) {
-            case 0:
-                return 'A';
-            case 1:
-                return 'B';
+    private static final int PLANET_BOUND = 3;
+    private static final int SEA_PLANET_VALUE = 0;
+    private static final int WIND_PLANET_VALUE = 1;
+    private static final char SEA_PLANET_LITERAL = 'A';
+    private static final char WIND_PLANET_LITERAL = 'B';
+    private static final char SUN_PLANET_LITERAL = 'C';
+
+    static char pickAPlanet() {
+        switch (new Random().nextInt(PLANET_BOUND)) {
+            case SEA_PLANET_VALUE:
+                return SEA_PLANET_LITERAL;
+            case WIND_PLANET_VALUE:
+                return WIND_PLANET_LITERAL;
             default:
-                return 'C';
+                return SUN_PLANET_LITERAL;
         }
     }
 
 
-    public static ProtectedRobot adaptForAliens(iRobot robot, char planetChoice) {
+    static ProtectedRobot adaptForAliens(iRobot robot, char planetChoice) {
         switch (planetChoice) {
-            case 'A':
+            case SEA_PLANET_LITERAL:
                 return new SeaRobot(robot);
-            case 'B':
+            case WIND_PLANET_LITERAL:
                 return new WindRobot(robot);
             default:
                 return new SunRobot(robot);

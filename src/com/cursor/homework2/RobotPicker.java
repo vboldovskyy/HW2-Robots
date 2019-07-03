@@ -7,13 +7,14 @@ import com.cursor.homework2.robots.Robot;
 
 import java.util.Random;
 
-    class RobotPicker {
+class RobotPicker {
     private static final int UPPER_BOUND = 12;
     private static final int MIDDLE_BOUND = 8;
     private static final int LOWER_BOUND = 3;
 
-        static iRobot pickARobot() {
-        int rand = new Random().nextInt(UPPER_BOUND) + 1;
+    static iRobot pickARobot() {
+        int rand = new Random().nextInt(UPPER_BOUND);
+        rand++;
 
         if (rand > MIDDLE_BOUND) {
             return new EnhancedRobot();
